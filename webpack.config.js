@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -16,11 +17,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "galactic-age",
+      title: "dino-hangman",
       template: "./src/index.html",
       inject: "body",
     }),
     new ESLintPlugin(),
+    new Dotenv(),
   ],
   module: {
     rules: [
