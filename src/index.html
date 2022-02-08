@@ -3,5 +3,37 @@
   <head>
     <title>Dino Hangman</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Dinosaur Hangman</h1>
+    <button id="play">Play</button>
+    <div id="play-box">
+      <label for="letter">Enter your letter:</label>
+      <br />
+      <input type="text" id="letter" maxlength="1" />
+      <br />
+      <button id="submit">Submit</button>
+
+      <div id="box">
+        <div id="hangman" class="man0"></div>
+        <div class="right">
+          <div id="used-letters-box">
+            <h3>Used Letters:</h3>
+            <ul id="used-letters"></ul>
+          </div>
+          <div id="" dummy-box>
+            <h3>Guessed Letters:</h3>
+            <ul id="dummy-array"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="word-box">
+        <h3>Correct word is:</h3>
+        <p id="word"></p>
+      </div>
+
+      <p class="showErrors"></p>
+      <p class="endgame"></p>
+    </div>
+  </body>
 </html>
